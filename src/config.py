@@ -7,10 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # OpenAI配置
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
-MODEL_NAME = os.getenv("MODEL_NAME", "gpt-3.5-turbo")
-EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
+OPENAI_API_KEY = "sk-acfb8b76305543c8a9976cbf9057aa72"
+OPENAI_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+MODEL_NAME = "qwen-turbo"
 
 # 向量数据库配置
 CHROMA_DB_PATH = os.getenv("CHROMA_DB_PATH", "./chroma_db")
