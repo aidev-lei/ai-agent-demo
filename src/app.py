@@ -5,11 +5,13 @@ import streamlit as st
 import os
 import sys
 
-# 添加src目录到路径
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+# 添加当前目录到路径（用于Streamlit Cloud）
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir)
 
-from src.agent import CustomerServiceAgent
-from src.config import OPENAI_API_KEY
+from agent import CustomerServiceAgent
+from config import OPENAI_API_KEY
 
 # 页面配置
 st.set_page_config(
