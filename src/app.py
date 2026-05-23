@@ -8,8 +8,8 @@ import sys
 # 添加src目录到路径
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
-from agent import CustomerServiceAgent
-from config import OPENAI_API_KEY
+from src.agent import CustomerServiceAgent
+from src.config import OPENAI_API_KEY
 
 # 页面配置
 st.set_page_config(
