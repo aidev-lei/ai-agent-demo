@@ -8,11 +8,11 @@ from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 
-from config import (
+from src.config import (
     OPENAI_API_KEY, OPENAI_BASE_URL, MODEL_NAME, EMBEDDING_MODEL,
     CHROMA_DB_PATH, TOP_K, SYSTEM_PROMPT, RAG_PROMPT_TEMPLATE
 )
-from tools import ToolManager
+from src.tools import ToolManager
 
 
 class CustomerServiceAgent:
