@@ -10,9 +10,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
 
-from agent import CustomerServiceAgent
-from config import OPENAI_API_KEY
-
+from src.agent import CustomerServiceAgent
+from src.config import OPENAI_API_KEY
 # 页面配置
 st.set_page_config(
     page_title="AI智能客服系统",
